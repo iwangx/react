@@ -1,0 +1,26 @@
+{
+  "name": "wx-react",
+  "description": "Character voting app for EVE Online",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangx/wx-react"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "express": "*",
+    "routes": "*",
+    "ejs": "*",
+    "xmldom": "*",
+    "body-parser": "*",
+    "path": "*",
+    "fs": "*",
+    "xml2js":"*"
+  },
+  "devDependencies":{
+    "grunt":"*",
+    "grunt-react":"*",
+    "grunt-contrib-watch":"*"
+  },
+  "license": "MIT"
+}
