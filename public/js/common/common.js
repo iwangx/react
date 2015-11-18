@@ -12,4 +12,20 @@ define(function (require, exports, module) {
             return React.createElement("h1", null, "这里是底部");
         }
     });
+
+    exports.CheckboxList=React.createClass({displayName: "CheckboxList",
+        render:function(){
+            var items=JSON.parse(this.props.items);
+            var repoList = items.map(function (repo) {
+                return (
+                    React.createElement("label", null, 
+                        React.createElement("input", {type: "checkbox"}), 
+                        repo
+                    )
+                );
+            });
+            return React.createElement("div", null, repoList);
+        }
+    });
+
 });
